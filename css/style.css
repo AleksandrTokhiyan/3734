@@ -249,8 +249,7 @@ button, input, textarea{
 
 .meal-plan-dashboard-body .days-of-week-item-body {
     display: flex;
-    /*justify-content: space-between;*/
-}
+height: 261px}
 
 .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
     height: auto;
@@ -345,7 +344,6 @@ button, input, textarea{
 
 .meal-plan-dashboard-body .aside-right {
     min-width: 414px;
-    /*border: 1px solid red;*/
     background-color: #fff;
     padding: 12px 3px 0;
     box-sizing: border-box;
@@ -530,12 +528,12 @@ div.drop_down.open > div.list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-height: 929px;
+    /*max-height: 929px;*/
+    max-height: 840px;
     overflow: auto;
-    padding: 0 8px 20px 8px;
+    padding: 0 8px 20px 0;
     box-sizing: border-box;
 }
-
 .ingredient-categories-control-bar {
     display: flex;
     margin: 0 0 13px 0;
