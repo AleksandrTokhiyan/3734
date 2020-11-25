@@ -8,6 +8,9 @@
     body {
         -webkit-print-color-adjust: exact !important;
     }
+    .meal-plan-dashboard-body .days-of-week-item-body{
+        height: auto;
+    }
     .dashboard-head {
         display: none !important;
     }

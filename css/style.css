@@ -404,7 +404,7 @@ height: 261px}
 }
 .meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .WeekDays{
     overflow: auto;
-    max-height: 852px;
+    max-height: 851px;
 }
 
 .hide {
@@ -846,7 +846,9 @@ padding: 0 8px 0 24px;
 .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
     width: 276px;
 }
-
+.meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body{
+    height: auto;
+}
 .meal-plan-dashboard-body .title_content {
     display: none;
 }
