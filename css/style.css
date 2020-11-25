@@ -258,6 +258,10 @@ height: 261px}
     padding:7px 5px;
 
 }
+.meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body .dishes-item-bar {
+    margin: 0 0 40px 0;
+}
+
 
 .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar:last-child {
     margin-right: 0;
@@ -843,9 +847,7 @@ padding: 0 8px 0 24px;
     justify-content: space-between
 }
 
-.meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
-    width: 276px;
-}
+
 .meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body{
     height: auto;
 }
