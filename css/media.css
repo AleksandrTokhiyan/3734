@@ -1,0 +1,315 @@
+@media (max-width: 1700px) {
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 49%;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        width: 1180px;
+        /*margin-right: 15px;*/
+    }
+
+    .meal-plan-dashboard-body {
+        /*margin: 0 15px;*/
+    }
+}
+
+@media (max-width: 1640px) {
+    .meal-plan-dashboard-head {
+        margin: 0 15px 20px 15px;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body {
+        overflow-x: auto;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        width: auto;
+        max-width: 1150px;
+        margin-right: 30px;
+    }
+
+    .meal-plan-dashboard-body .aside-right {
+        min-width: initial;
+    }
+
+    .meal-plan-dashboard-body {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15px;
+    }
+
+}
+
+@media (max-width: 1600px) {
+    .meal-plan-dashboard-body .aside-left {
+        max-width: 80%;
+    }
+
+    .dishes-item-bar .img-bar {
+        width: 100%;
+        border-color: red;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
+        width: 25%;
+        box-shadow: 0 0 3px red;
+
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item {
+        box-shadow: 0 0 3px red;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .meal-plan-dashboard-body .aside-left {
+
+        margin-right: 10px;
+    }
+
+    .dishes-item-bar .text-bar .dishes-item-bar-name {
+        font-size: 14px;
+        min-height: 38px;
+    }
+
+    .meal-plan-dashboard-body {
+        flex-wrap: wrap;
+        flex-flow: wrap-reverse;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        max-width: 100%;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 20%;
+        max-width: 20%;
+    }
+
+    div.drop_down {
+        padding: 0;
+    }
+
+    .meal-plan-dashboard-body .aside-right {
+        padding: 12px 10px 0;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
+        width: 25%;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        margin: 0;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        max-height: 585px;
+        margin: 0 0 30px;
+    }
+
+    div.drop_down.open > div.list {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 25%;
+        max-width: 25%;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        max-height: 560px;
+    }
+}
+
+@media (max-width: 992px) {
+    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button,
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li{
+        font-size: 16px;
+        background-color: #6262AB;
+        color: #56A646;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body {
+        flex-wrap: wrap;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
+        width: 50%;
+        box-sizing: border-box;
+
+    }
+
+    .type-eating-time-bar.show-in-media {
+        display: block;
+        width: 100%;
+        border: 1px solid green;
+        margin: 15px 0;
+    }
+
+    .type-eating-time-bar {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li:first-child,
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li:last-child {
+        width: auto;
+        padding: 0 10px;
+        height: 32px;
+        background-color: red;
+    }
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p
+    {
+        font-size: 14px;
+
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 769px) {
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        max-height: 545px;
+    }
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 33.3%;
+        max-width: 33.3%;
+        max-height: 273px;
+    }
+
+    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        width: 50%;
+        max-width: 50%;
+    }
+    .type-eating-time-bar.show-in-media{
+        margin: 10px 0;
+    }
+    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button{
+        font-size: 12px;
+    }
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
+        font-size: 14px;}
+    .dishes-item-bar .text-bar .dishes-item-bar-name {
+        font-size: 12px;
+        min-height: initial;
+    }
+    .dishes-item-bar .text-bar .dishes-item-bar-info span {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p{
+        font-size: 12px;
+        line-height: initial;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p span {
+        min-width: 50px;
+        line-height: initial;}
+    .meal-plan-dashboard-body .days-of-week-item-head h2{
+        line-height: initial;
+        font-size: 25px;
+        padding: 3px;
+    }
+    div.drop_down > div.caption{
+        font-size: 14px;
+        line-height: initial;
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-plan-dashboard-head {
+        margin: 0 10px 20px 10px;
+    }
+    .meal-plan-dashboard-body{
+        margin: 0 10px;
+    }
+    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button {
+        font-size: 10px;
+        padding: 3px 4px;
+    }
+    .dishes-item-bar .text-bar .dishes-item-bar-setting{
+        margin: 0 0 5px 0;
+    }
+    div.drop_down > div.caption{
+        font-size: 12px;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p span {
+        min-width: 40px;
+        font-size: 10px;
+        margin: 0 0 0 6px;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div p {
+        font-size: 10px;}
+    .meal-plan-dashboard-body .days-of-week-item-head > div p:last-child {
+        margin-left: 5px;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head h2 {
+        font-size: 21px;}
+    .meal-plan-dashboard-body .days-of-week-item-head {
+        flex-flow: column;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head h2{
+        max-width: max-content;
+        margin: 0 0 5px 0 ;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div{
+        padding: 0;
+    }
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
+        font-size: 12px;
+    }
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .text-bar .dishes-item-bar-name{
+        width: 100%;
+        min-height: initial;
+        font-size: 12px;
+        line-height: initial;
+        margin: 0 0 5px 0;
+    }
+    .dishes-item-bar .text-bar > div {
+        flex-wrap: wrap;}
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .img-bar {
+        max-height: 150px;
+    }
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        max-height: 480px;
+        margin: 0 0 20px;
+    }
+    .dishes-item-bar .text-bar .dishes-item-bar-info span {
+        width: 20px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li{
+        padding: initial;
+    }
+    .dishes-item-bar .img-bar {
+        max-height: 150px;
+    }
+    .dishes-item-bar .text-bar .dishes-item-bar-name{
+        width: 100%;
+    }
+}

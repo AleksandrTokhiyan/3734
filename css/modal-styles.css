@@ -1,0 +1,319 @@
+/*    Modal   */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    overflow: auto;
+    background-color: #1A1A1ABA;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    z-index: 3;
+}
+
+.modal__dialog {
+    position: relative;
+    width: 796px;
+    padding: 24px 4px 46px 24px;
+    margin: auto;
+    border-radius: 3px;
+    height: 872px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    box-sizing: border-box;
+
+}
+
+.modal__close {
+    max-width: 13px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    padding: 0;
+    border: none;
+    color: #ccc;
+    background-color: transparent;
+    background-image: none;
+}
+
+.modal__close img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.modal__close:focus {
+    outline: 0;
+}
+
+.modal.is-modal-active {
+    display: flex;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.modal__title {
+
+}
+
+.modal__btn {
+    text-decoration: none;
+    transition: all .25s linear;
+    cursor: pointer;
+}
+
+.modal__btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal__btn:focus,
+.modal__btn:active {
+    outline: 0;
+}
+
+.dishes-modal-1 .modal__btn--secondary {
+
+}
+
+.dishes-modal-1 .modal__header {
+    margin: 0 0 12px 0;
+}
+
+.dishes-modal-1 .modal__header .modal__title {
+    margin: 0 0 7px;
+    text-align: left;
+    font: normal normal bold 30px/42px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.dishes-modal-1 .modal__header .modal__description {
+    text-align: left;
+    font: normal normal 300 20px/24px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    max-width: 667px;
+    margin: 0;
+    max-height: 74px;
+    overflow: auto;
+}
+
+.dishes-modal-1 .modal__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 663px;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.dishes-modal-1 .modal__content > div {
+
+}
+
+.dishes-modal-1 .modal__content .img-bar {
+    width: 422px;
+    max-height: 407px;
+}
+
+.dishes-modal-1 .modal__content .img-bar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.dishes-modal-1 .modal__content .nutrition-facts-bar {
+    width: 320px;
+    height: 407px;
+    background-color: #FBF8EF;
+    opacity: 1;
+    padding: 12px 18px;
+    box-sizing: border-box;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar h3,
+.dishes-modal-1 .modal__content .nutrition-facts-bar h3 {
+    margin: 0;
+    text-align: left;
+    font: normal normal 600 24px/30px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.dishes-modal-1 .modal__content .nutrition-facts-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.dishes-modal-1 .modal__content .nutrition-facts-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+
+}
+
+.dishes-modal-1 .modal__content .nutrition-facts-bar ul li > span {
+    text-align: left;
+    font: normal normal 300 20px/33px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+.dishes-modal-1 .modal__content .nutrition-facts-bar ul li > span b {
+    font-family: SofiaProBold, sans-serif;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar {
+    display: flex;
+    opacity: 1;
+    padding: 10px 12px;
+    margin: 12px 0 0 0;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar > div {
+    margin: auto;
+    text-align: center;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar > div span.icon-bar {
+    width: 30px;
+    height: 33px;
+    display: block;
+    margin: 0 auto 3px;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar > div span.icon-bar img {
+    height: 100%;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar > span,
+.dishes-modal-1 .modal__content .schemа-bar > div span:last-child {
+    max-width: 70px;
+    text-align: center;
+    font: normal normal 600 18px/20px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.dishes-modal-1 .modal__content .schemа-bar > span {
+    max-height: 33px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar {
+    margin-top: 23px;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar h3 {
+    position: relative;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar h3:before {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-color: #6262AB;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar ul {
+    list-style: none;
+    padding: 0 0 0 22px;
+    margin: 0 0 0 10px;
+    border-left: 2px solid #6262AB;
+
+
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar ul li {
+    text-align: left;
+    font: normal normal 300 20px/28px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    display: flex;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar ul li span.color-style {
+    color: #6262AB;
+    margin: 0 10px;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar ul li button.info-bar {
+    max-width: 17px;
+    border: none;
+    padding: 0;
+    outline: none;
+    margin: 0 0 0 7px;
+    height: 28px;
+    background-color: transparent;
+}
+
+.dishes-modal-1 .modal__content .ingredients-bar ul li button.info-bar img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dishes-modal-1 .modal__content .notes-bar {
+    max-width: 320px;
+margin: 23px 0 0 0;
+}
+
+.dishes-modal-1 .modal__content .notes-bar h3 {
+    text-align: left;
+    font: normal normal 600 24px/30px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 9px 0 0 0;
+}
+
+.dishes-modal-1 .modal__content .notes-bar p {
+    text-align: left;
+    font: normal normal 300 20px/24px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    margin: 0;
+}

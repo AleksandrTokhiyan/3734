@@ -1,0 +1,499 @@
+/* Print Styles */
+@page {
+    size: auto !important;
+    margin: 0 !important;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important;
+    }
+    .dashboard-head {
+        display: none !important;
+    }
+
+    .shopping-list .shopping-list-content {
+        box-shadow: initial !important;
+    }
+    .shopping-list .shopping-list-content .title_content{
+        background-color: transparent !important;
+    }
+
+    /* /Shopping List Print */
+    .meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .type-eating-time-bar {
+        display: block;
+    }
+
+    .meal-plan-dashboard-body .dashboard-head,
+    .meal-plan-dashboard-body .aside-left > div:last-child,
+    .meal-plan-dashboard-body .aside-right {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        max-width: 595px;
+        min-width: initial;
+        height: 842px;
+        margin: auto;
+        padding: 0 0 25px 0 ;
+    }
+
+    .meal-plan-dashboard-body .type-eating-time-bar {
+        margin-bottom: 16px;
+    }
+    .meal-plan-dashboard-body .type-eating-time-bar.show-in-media{
+        display: none;
+    }
+    .meal-plan-dashboard-body .title_content {
+        background-color: transparent;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 52px;
+        margin: 0 0 12px 0;
+        box-sizing: border-box;
+    }
+
+    .meal-plan-dashboard-body .title_content h1 {
+        display: block;
+        font: normal normal bold 24px/34px Sofia Pro;
+        font-family: SofiaProBold, sans-serif;
+        letter-spacing: 0;
+        color: #1A1A1A;
+        text-transform: uppercase;
+        opacity: 1;
+        margin: 0;
+        background-color: #FDECA8;
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
+        max-width: 135px;
+        height: 67px;
+        border-radius: 2px;
+        position: relative;
+        padding: 4px;
+        box-sizing: border-box;
+        box-shadow: initial;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body {
+        justify-content: space-between;
+        box-shadow: initial;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .img-bar {
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: inherit;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .img-bar img {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar > div {
+        justify-content: flex-end;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item {
+        padding: 13px 8px 0 8px;
+        box-shadow: initial;
+    }
+
+    .dishes-item-bar .text-bar > div .rate-bar-plain {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar .dishes-item-bar-setting {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .heart-btn {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item .dishes-item-bar .box {
+        height: 100%;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item .dishes-item-bar .box .text-bar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar > div:last-child {
+        border-top: 1px solid #fff;
+        padding-top: 3px;
+    }
+
+    .meal-plan-dashboard-body .note-btn {
+        top: initial;
+        bottom: 10px;
+        left: 4px;
+    }
+
+    .meal-plan-dashboard-body .WeekDays {
+        margin: 0;
+        box-shadow: initial;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(1) .dishes-item-bar,
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(3) .dishes-item-bar,
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(5) .dishes-item-bar,
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(7) .dishes-item-bar {
+        background-color: #FDECA8;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(2) .dishes-item-bar,
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(4) .dishes-item-bar,
+    .meal-plan-dashboard-body .days-of-week-item:nth-child(6) .dishes-item-bar {
+        background-color: #FBF8EF;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar.show-in-media {
+        display: none;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div p {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-head h2 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar .dishes-item-bar-name {
+        width: 100%;
+        font-size: 11px;
+        line-height: 14px;
+        font-family: SofiaProBold, sans-serif;
+    }
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
+        font-size: 11px;
+        line-height: 14px;
+        padding: 1px;
+    }
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li:first-child,
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li:last-child {
+        width: auto;
+        padding: 0 4px;
+        height: 16px;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div p span {
+        font-size: 8px;
+        line-height: 10px;
+        height: 15px;
+        min-width: 31px;
+        padding: 0;
+        margin-left: 6px;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar .dishes-item-bar-info span {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .meal-plan-dashboard-body .note-btn i.fa-sticky-note {
+        color: #FFC107;
+        font-size: 12px;
+    }
+
+    .meal-plan-dashboard-body .dishes-item-bar .text-bar .dishes-item-bar-info span {
+        width: 19px;
+        height: 19px;
+    }
+    .meal-plan-dashboard-body .days-of-week-item-head > div{
+        padding: 0;
+    }
+
+
+    /*  /Meal Plan Dashboard Print  */
+
+    section .recipes-banner .recipes-banner_content > div .recipes-banner_header {
+        display: block !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div:first-child .recipes-banner_header {
+        display: block !important;
+    }
+    section .recipes-banner .recipes-banner_content > div.add-print-time{
+        display: block !important;
+    }
+    section .recipes-banner .recipes-banner_content > div.title_content {
+        display: flex !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div:nth-child(2) .recipes-banner_content-header {
+        display: none !important;
+    }
+
+    section .recipes-banner .recipes-banner_content {
+        flex-wrap: wrap !important;
+        max-width: 595px !important;
+        margin: auto !important;
+        justify-content: space-between !important;
+        padding: 27px 52px 75px !important;
+        background: #FFFFFF 0 0 no-repeat padding-box !important;
+        opacity: 1 !important;
+    }
+
+    section .recipes-banner .recipes-banner_header div > p,
+    section .recipes-banner .recipes-banner_content .nutrition-bar ul {
+        display: none !important;
+    }
+
+
+    section .recipes-banner .recipes-banner_content .nutrition-bar .img-bar {
+        margin-top: 0 !important;
+        height: auto !important;
+        max-width: 190px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .nutrition-bar .date-info {
+        display: block !important;
+        text-align: left !important;
+        font: normal normal 300 11px/13px Sofia Pro !important;
+        font-family: SofiaProLight, sans-serif !important;
+        letter-spacing: 0 !important;
+        color: #1A1A1A93 !important;
+        opacity: 1 !important;
+        margin: 4px 0 0 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .recipes-banner_content-header {
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 0 12px 0 !important;
+        background-color: transparent !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div:first-child .recipes-banner_content-header {
+        display: none !important;
+    }
+
+    section .recipes-banner .recipes-banner_header {
+        margin: 0 0 8px 0 !important;
+        display: none !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .ingredients-bar ul {
+        margin: 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div {
+        margin: 0 !important;
+        width: 50% !important;
+        max-width: 190px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div:nth-child(2),
+    section .recipes-banner .recipes-banner_content > div:nth-child(3) {
+        margin-bottom: 28px !important;
+
+    }
+
+    section .recipes-banner .recipes-banner_content .ingredients-bar li:before {
+        width: 4px !important;
+        height: 4px !important;
+        margin-right: 7px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .ingredients-bar ul,
+    section .recipes-banner .recipes-banner_content .instructions-bar ol {
+        max-height: initial !important;
+        height: auto !important;
+        overflow: initial !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        list-style: none !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .ingredients-bar,
+    section .recipes-banner .recipes-banner_content .instructions-bar {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div:last-child,
+    section .recipes-banner .recipes-banner_content .add-print-time {
+        max-width: 277px !important;
+        width: 277px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .title_content {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 114px !important;
+        opacity: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .title_content h1 {
+        text-align: left !important;
+        font: normal normal bold 24px/34px Sofia Pro !important;
+        font-family: SofiaProBold, sans-serif !important;
+        letter-spacing: 0 !important;
+        color: #1A1A1A !important;
+        text-transform: uppercase !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        background: #FDECA8 0 0 no-repeat padding-box !important;
+        padding: 8px 30px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 32px 52px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div .notes-bar {
+        margin: 16px 0 0 0 !important;
+        display: block !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div .notes-bar h3 {
+        text-align: left !important;
+        font: normal normal 600 16px/20px Sofia Pro !important;
+        font-family: SofiaProBold, sans-serif !important;
+        letter-spacing: 0 !important;
+        color: #1A1A1A !important;
+        text-transform: capitalize !important;
+        opacity: 1 !important;
+        margin: 0 0 12px 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content > div .notes-bar p {
+        text-align: left !important;
+        font: normal normal 300 11px/16px Sofia Pro !important;
+        font-family: SofiaProLight, sans-serif !important;
+        letter-spacing: 0 !important;
+        color: #1A1A1A !important;
+        margin: 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_header .servings-num-item {
+        font-size: 11px !important;
+        line-height: initial !important;
+        margin: 3px 0 0 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_header h2 {
+        font-size: 14px !important;
+        line-height: 17px !important;
+        text-transform: capitalize !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .recipes-banner_content-header h3 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .ingredients-bar li,
+    section .recipes-banner .recipes-banner_content .ingredients-bar li span,
+    section .recipes-banner .recipes-banner_content .instructions-bar li,
+    section .recipes-banner .recipes-banner_content .nutrition-bar ul li,
+    section .recipes-banner .recipes-banner_content .nutrition-bar ul li span,
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > span,
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > div span:last-child,
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > span {
+        font-size: 11px !important;
+        line-height: 16px !important;
+    }
+    section .recipes-banner .recipes-banner_content .instructions-bar ol {
+        counter-reset: myOrderedListItemsCounter !important;
+    }
+    section .recipes-banner .recipes-banner_content .instructions-bar ol li{
+        position: relative !important;
+        display: flex !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    section .recipes-banner .recipes-banner_content .instructions-bar li:before{
+        counter-increment: myOrderedListItemsCounter !important;
+        content: counter(myOrderedListItemsCounter)"." !important;
+        margin-right: 8px !important;
+        background-color: #FDD106 !important;
+        text-align: left !important;
+        font: normal normal 600 11px/30px Sofia Pro !important;
+        font-family: SofiaProBold, sans-serif !important;
+        letter-spacing: 0 !important;
+        color: #1A1A1A !important;
+        opacity: 1 !important;
+        min-width: 16px !important;
+        height: 16px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+    }
+    section .recipes-banner .recipes-banner_content .instructions-bar li::marker{
+
+    }
+    section .recipes-banner .recipes-banner_content .add-print-time ul {
+        display: flex !important;
+        padding: 58px 0 0 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time ul li {
+        padding: 0 4px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar {
+        display: flex !important;
+        background: #FFFFFF 0 0 no-repeat padding-box !important;
+        opacity: 1 !important;
+        padding: 10px 0 !important;
+        margin: 6px 0 0 0 !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > div {
+        margin: auto !important;
+        text-align: center !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > span {
+        max-height: 33px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > span,
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > div span:last-child {
+        text-align: center !important;
+        font-family: SofiaProBold, sans-serif !important;
+        text-transform: capitalize !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > div span.icon-bar {
+        width: 20px !important;
+        height: 23px !important;
+        display: block !important;
+        margin: 0 auto 3px !important;
+    }
+
+    section .recipes-banner .recipes-banner_content .add-print-time .schemа-bar > div span.icon-bar img {
+        height: 100% !important;
+    }
+    /*  Recipes Print  */
+
+}
+
+
+/* Print Styles */

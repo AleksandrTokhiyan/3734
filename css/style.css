@@ -1,0 +1,1200 @@
+body {
+    margin: 0;
+    background-color: #FBF8EF;
+}
+
+
+/*  Scroll  */
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #E9E7DE;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #1A1A1A49;
+    border-radius: 20px;
+    border: 1px solid #E9E7DE;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1A1A1A49 #E9E7DE;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #E9E7DE;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1A1A1A49;
+    border-radius: 20px;
+    border: 1px solid #E9E7DE;
+}
+
+button, input[type=submit]{
+cursor: pointer;
+}
+button, input, textarea{
+    outline: none;
+}
+
+/*  /Scroll  */
+
+.meal-plan-dashboard {
+    max-width: 1640px;
+    margin: 34px auto 24px;
+}
+
+.dashboard-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #EDE8E3;
+}
+
+.dashboard-head .sentence-category-bar {
+    display: flex;
+}
+
+.dashboard-head .sentence-category-bar a,
+.dashboard-head .capabilities-bar button {
+    margin-right: 25px;
+}
+
+.dashboard-head .sentence-category-bar a:last-child,
+.dashboard-head .capabilities-bar button:last-child {
+    margin-right: 0;
+}
+
+.dashboard-head .capabilities-bar button,
+.dashboard-head .sentence-category-bar a,
+.dashboard-head .capabilities-bar a {
+    text-align: left;
+    font: normal normal 600 18px/22px Sofia Pro, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 7px 20px;
+    background: #fdd1069c 0 0 no-repeat padding-box;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: SofiaProBold, sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: .3s ease;
+
+    text-decoration: none
+}
+
+.dashboard-head .sentence-category-bar a:hover,
+.dashboard-head .capabilities-bar a:hover {
+    background-color: #FDD106;
+}
+
+.dashboard-head .sentence-category-bar a.active {
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.dashboard-head .capabilities-bar button.print-btn {
+    background-color: #fdeca88a;
+}
+
+.dashboard-head .capabilities-bar button.print-btn:hover {
+    background-color: #FDECA8;
+}
+
+.dashboard-head .capabilities-bar button.edit-btn {
+    background-color: #1A1A1A14;
+}
+
+.dashboard-head .capabilities-bar button.edit-btn:hover {
+    background-color: #1a1a1a47;
+}
+
+.dashboard-head .capabilities-bar button.delete-btn {
+    background-color: #D6442D2E;
+}
+
+.dashboard-head .capabilities-bar button.delete-btn:hover {
+    background-color: #d6442d47;
+}
+
+.meal-plan-dashboard-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal-plan-dashboard-body .aside-left {
+    width: 1188px;
+    margin-right: 38px;
+    background-color: #FFFFFF;
+}
+
+.meal-plan-dashboard-body .aside-left .type-eating-time-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
+    width: 286px;
+    text-align: center;
+    font: normal normal 600 18px/22px Sofia Pro, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-left: 3px solid #fff;
+    background: #FDECA8 0 0 no-repeat padding-box;
+    font-family: SofiaProBold, sans-serif;
+}
+
+.meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li:first-child {
+    border-left: none;
+}
+
+.meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li:first-child,
+.meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li:last-child {
+    width: auto;
+    padding: 0 10px;
+    height: 32px;
+}
+
+
+.meal-plan-dashboard-body .days-of-week-item {
+    padding: 25px 12px 0 20px;
+    background-color: #fff;
+}
+.meal-plan-dashboard-body .days-of-week-item:first-child {
+    padding-top: 0;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head h2 {
+    text-align: left;
+    font: normal normal bold 28px/34px Orpheus Pro;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0;
+    font-family: OrpheusProBold, sans-serif;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head > div {
+    display: flex;
+    padding: 0 8px;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head > div p {
+    text-align: left;
+    font: normal normal bold 16px/23px Sofia Pro, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: SofiaProBold, sans-serif;
+
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head > div p:last-child {
+    margin-left: 12px;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head > div p span {
+    min-width: 57px;
+    box-sizing: border-box;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font: normal normal 300 14px/16px Sofia Pro, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 2px solid #56A646;
+    border-radius: 20px;
+    margin-left: 8px;
+    font-family: SofiaproLight, sans-serif;
+    text-transform: lowercase;
+
+}
+
+.meal-plan-dashboard-body .days-of-week-item-head > div p:last-child span {
+    border-color: #6262AB;
+}
+
+.meal-plan-dashboard-body .days-of-week-item-body {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
+    height: auto;
+    width: 276px;
+    margin: 3px 0 0 0;
+    padding:7px 5px;
+
+}
+
+.meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar:last-child {
+    margin-right: 0;
+}
+
+.dishes-item-bar .text-bar > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-name {
+    margin: 0;
+    font: normal normal 300 16px/19px Sofia Pro;
+    font-family: SofiaproLight, sans-serif;
+    text-align: left;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-setting {
+    display: flex;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-setting > button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-setting > button:last-child {
+    margin-right: 5px;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-info span {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 2px solid #56A646;
+    border-radius: 20px;
+    opacity: 1;
+
+    text-align: left;
+    font: normal normal 300 12px/14px Sofia Pro;
+    letter-spacing: 0;
+    color: #1A1A1A;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box
+}
+
+.dishes-item-bar .text-bar .dishes-item-bar-info span:last-child {
+    border-color: #6262AB;
+    margin-left: 5px;
+}
+
+.dishes-item-bar .img-bar {
+    width: 270px;
+    height: 185px;
+    box-shadow: 0 0 1px #000;
+    margin-top: 8px;
+    position: relative;
+}
+
+.dishes-item-bar .img-bar img {
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.meal-plan-dashboard-body .aside-right {
+    min-width: 414px;
+    /*border: 1px solid red;*/
+    background-color: #fff;
+    padding: 12px 3px 0;
+    box-sizing: border-box;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-item-bar {
+    max-width: 190px;
+    height: auto;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 0 6px #00000029 !important;
+    padding: 8px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 929px;
+    overflow: auto;
+    padding: 0 8px 20px 8px;
+    box-sizing: border-box
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+    width: 50%;
+    margin-bottom: 9px;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar:nth-last-child(2),
+.meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar:last-child {
+    margin-bottom: 0;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .img-bar {
+    width: 100%;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .text-bar .dishes-item-bar-name {
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 32px;
+}
+
+
+.meal-plan-dashboard-body .aside-left > div:last-child,
+.meal-plan-dashboard-body .aside-right .dishes-category-bar {
+    margin-right: 9px;
+    overflow-x: hidden !important;
+}
+
+.meal-plan-dashboard-body .aside-left > div:last-child {
+    max-height: 940px;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+.meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .WeekDays{
+    overflow: auto;
+    max-height: 852px;
+}
+
+.hide {
+    display: none !important;
+}
+
+div.drop_down {
+    position: relative;
+    margin: 0 8px 10px 8px;
+}
+
+div.drop_down span.arrow-btn-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #1A1A1A4A;
+    height: 28px;
+    margin: auto;
+}
+
+div.drop_down span.arrow-btn-bar img {
+    transition: .3s ease;
+
+}
+
+div.drop_down span.arrow-btn-bar.open img {
+    transform: rotateX(180deg);
+}
+
+div.drop_down > div.caption {
+    background-color: #fff;
+    padding: 11px 15px;
+    cursor: pointer;
+    border: 1px solid #00000029;
+    margin: 0;
+    font: normal normal 300 16px/19px Sofia Pro;
+    font-family: SofiaproLight, sans-serif;
+    text-align: left;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1
+}
+
+div.drop_down > div.list {
+    position: absolute;
+    border: 1px solid #00000029;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    z-index: 9;
+    max-width: 389px;
+}
+
+div.drop_down > div.list > div.dishes-item {
+
+    padding: 7px 15px;
+    cursor: pointer;
+    text-align: left;
+
+    font: normal normal 300 16px/19px Sofia Pro;
+    font-family: SofiaproLight, sans-serif;
+transition: .3s ease;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+div.drop_down > div.list > div.dishes-item:last-child {
+
+}
+
+div.drop_down > div.list > div.dishes-item.selected {
+    font-weight: bold;
+}
+
+div.drop_down > div.caption:hover {
+    box-shadow: 0 0 6px #00000029;
+}
+
+div.drop_down > div.list > div.dishes-item:hover {
+background-color: #FDD106}
+
+div.drop_down.open > div.caption {
+    margin-bottom: 10px;
+}
+
+div.drop_down.open > div.list {
+    display: block;
+}
+
+
+.meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar:hover {
+    box-shadow: 0 0 6px #00000029 !important;
+    border-radius: 3px;
+
+}
+
+.dishes-item-bar {
+    cursor: grab;
+}
+
+.dishes-item-bar:active {
+    cursor: grabbing;
+
+}
+
+/*******************************************************************************************************/
+
+.type-eating-time-bar.show-in-media {
+    display: none;
+}
+
+
+.ingredient-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 929px;
+    overflow: auto;
+    padding: 0 8px 20px 8px;
+    box-sizing: border-box;
+}
+
+.ingredient-categories-control-bar {
+    display: flex;
+    margin: 0 0 13px 0;
+    width: 100%;
+    border-bottom: 1px solid #E9E7DE;
+    padding: 0 0 13px 0;
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn {
+    border: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px 0 0;
+    position: relative;
+    background-color: #F7F6F3;
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn.active_ingredient-category:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #B7B6B1;
+    position: absolute;
+    bottom: -13px;
+
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn > span {
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn .ingredient-btnName {
+    display: block;
+    margin: 0 0 6px 0;
+    text-align: center;
+    font: normal normal 300 14px/16px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    border-bottom: 1px solid;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn .img-bar {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn img {
+
+}
+
+.ingredient-categories-control-bar .ingredient-category-btn.active_ingredient-category {
+    background-color: #FDECA8;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar {
+    height: 929px;
+}
+
+.dishes-category-bar {
+    margin-left: 9px;
+}
+
+button {
+    outline: none !important;
+}
+
+
+.meal-plan-dashboard-body .heart-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin: 5px 6px 0 0;
+}
+
+.meal-plan-dashboard-body .heart-btn i.fa-heart,
+.meal-plan-dashboard-body .heart-btn i.fa-heart-o {
+    color: #EB4A20;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.meal-plan-dashboard-body .fa-heart-o:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.meal-plan-dashboard-body .heart-btn i.fa-heart-o:after {
+    content: "\f004";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.meal-plan-dashboard-body .note-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin: 4px 0 0 4px;
+    background-color: transparent;
+}
+
+.meal-plan-dashboard-body .note-btn i.fa-sticky-note {
+    color: #FDECA8;
+    font-size: 24px;
+}
+
+.meal-plan-dashboard-body .aside-right form {
+    text-align: center;
+}
+
+.meal-plan-dashboard-body label[for=searchMainIngredient] {
+    position: relative;
+    display: flex;
+    max-height: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 390px;
+    margin: 0 auto 8px;
+}
+
+.meal-plan-dashboard-body label[for=searchMainIngredient] span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    color: #1A1A1A49;
+    margin: 0 8px 0 0;
+}
+
+.meal-plan-dashboard-body label[for=searchMainIngredient] span i {
+    font-size: 22px;
+}
+
+.meal-plan-dashboard-body #searchMainIngredient {
+    width: 390px;
+    height: 40px;
+    border: 1px solid #1A1A1A4A;
+    opacity: 1;
+    margin: 0;
+    text-align: left;
+    font: normal normal 300 14px/16px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A49;
+    text-transform: capitalize;
+    padding: 10px 12px 10px 12px;
+    outline: none;
+}
+
+.meal-plan-dashboard-body #searchMainIngredient::placeholder {
+    color: #1A1A1A49;
+}
+
+.meal-plan-dashboard-body .WeekDays {
+    overflow: auto;
+    max-height: 936px;
+    margin-top: 30px;
+    margin-right: 8px;
+}
+
+.meal-plan-dashboard-body .favourite-recipes .WeekDays .days-of-week-item {
+    padding: 0;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar {
+    padding: 0;
+}
+
+.meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item {
+    width: 390px;
+    height: 253px;
+    background: #2E2E7187 0 0 no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.meal-plan-dashboard-body .recipe-item-non-active {
+    opacity: 0.3 !important;
+}
+
+.meal-plan-dashboard-body .active_custom-recipe-item {
+    opacity: 1 !important;
+}
+
+.meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item h2 {
+    position: absolute;
+    text-align: left;
+    font: normal normal 300 36px/42px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    max-height: max-content;
+    max-width: max-content;
+
+}
+
+.meal-plan-dashboard-body .aside-left {
+    min-width: 1188px;
+}
+
+.meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .type-eating-time-bar,
+.meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .WeekDays {
+    display: none;
+}
+
+.meal-plan-dashboard-body .aside-right .dishes-category-bar.add-custom-recipe {
+    height: 888px;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner {
+    min-height: 930px;
+    width: auto;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+    text-align: center;
+    font: normal normal bold 42px/50px Orpheus Pro;
+    font-family: OrpheusProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    margin: 20px 0 84px 0;
+
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 9px 0 18px;
+    overflow: auto;
+    max-height: 805px;
+    padding: 0 9px 0 0;
+
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+    width: 150px;
+    height: 220px;
+    background: #2E2E7187 0 0 no-repeat padding-box;
+    opacity: 1;
+    margin: 0 16px 17px 0;
+    position: relative;
+}
+
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item:nth-child(7n) {
+    margin-right: 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item span {
+    text-align: center;
+    font: normal normal 300 24px/29px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2E2E7187 0 0 no-repeat padding-box;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.favourite-recipes .WeekDays {
+    display: block !important;
+    /*max-height: initial;*/
+padding: 0 8px 0 24px;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.favourite-recipes h2 {
+    margin: 20px 0 30px;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .days-of-week-item-body {
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
+    width: 276px;
+}
+
+.meal-plan-dashboard-body .title_content {
+    display: none;
+}
+
+
+.meal-plan-dashboard-body .aside-left > div:last-child {
+    margin: 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner.custom-recipes {
+    background-color: #FBF8EF;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .head-name {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding: 20px 30px;
+    margin: 0 0 22px 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .head-name h2 {
+    text-align: center;
+    font: normal normal bold 42px/50px Orpheus Pro;
+    font-family: OrpheusProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    margin: 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes {
+    display: flex;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar {
+    width: 40%;
+    max-width: 414px;
+    height: 855px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 62px 0 96px;
+    flex-wrap: wrap;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .box {
+    border: 2px dashed #1A1A1A49;
+    padding: 8px;
+    box-sizing: border-box;
+    max-width: 292px;
+    background-color: #ffffff;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .box .dishes-item-bar-info span {
+    width: 30px;
+    height: 30px;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .box .dishes-item-bar-info {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar {
+    width: 276px;
+    background: #F8F7F4;
+    box-shadow: initial;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar .info-toAdd {
+    position: absolute;
+    margin: 0;
+    text-align: left;
+    font: normal normal 300 14px/16px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A49;
+    text-transform: lowercase;
+    opacity: 1;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .box {
+    margin: auto;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .form_group:first-child {
+    margin: 0 0 12px 0;
+}
+
+ .save-btn {
+    width: 120px;
+    background: #56A646 0 0 no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 600 18px/22px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: 9px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px auto;
+    border: none;
+    outline: none;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes  .add-ingredients{
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal 300 14px/16px Sofia Pro;
+    font-family: sans-serif, sans-serif;
+    letter-spacing: 0;
+    color: #FDD106;
+    text-transform: capitalize;
+    opacity: 1;
+    border: none;
+    box-shadow: initial;
+    background-color: transparent;
+    margin: 8px 0 0 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .form_group .add-ingredients span {
+    text-decoration: underline;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .form_group > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar p {
+    text-align: left;
+    font: normal normal bold 16px/23px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 12px 0;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar p span {
+    text-transform: lowercase;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label {
+    font: normal normal bold 16px/23px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input {
+    text-align: left;
+    max-width: 100%;
+    font: normal normal 300 16px/19px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    padding: 10px 0 10px 12px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #1A1A1A49;
+    box-shadow: initial;
+    outline: none;
+    width: 100%;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input::placeholder {
+    border-color: #1A1A1A49;
+    text-transform: capitalize;
+}
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input:focus {
+    border-color: #56A646;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates],
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydratesTwo] {
+    font-size: 14px;
+    line-height: 17px;
+}
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] span
+{
+    font-family: SofiaProLight, sans-serif;
+    text-transform: lowercase;        }
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] input:focus {
+    border: 2px solid #56A646;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] input {
+    margin: 0 4px 0 8px;
+    max-width: 65px;
+    border: 2px solid #1A1A1A49;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydratesTwo] input:focus {
+    border: 2px solid #6262AB;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydratesTwo] input {
+    max-width: 65px;
+    margin: 0 0 0 8px;
+    border: 2px solid #1A1A1A49;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .trash-btn {
+    max-width: 19px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar .trash-btn img {
+    max-width: 100%;
+    display: block;
+}
+
+.add-note .form_group {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.add-note .form_group label {
+    width: 100%;
+    text-align: left;
+    font: normal normal bold 16px/23px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.add-note .form_group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 390px;
+    max-width: 390px;
+    min-height: 103px;
+    max-height: 103px;
+    border: 1px solid #1A1A1A49;
+    padding: 15px;
+}
+
+.add-note .not-banner .add-not-bar {
+    width: 100%;
+    height: 72px;
+    background: #E9E7DE52 0 0 no-repeat padding-box;
+    border: 1px dashed #1A1A1A49;
+    opacity: 1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.add-note .add-not-bar > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.add-note .add-not-bar > div .note-btn {
+    position: inherit;
+    width: 100%;
+}
+
+.meal-plan-dashboard-body .add-not-bar > div .note-btn i {
+    color: #FFC107;
+}
+
+.add-note .not-banner .add-not-bar span {
+    text-align: left;
+    font: normal normal 300 14px/16px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A49;
+}
+
+.add-note .not-banner .setting-btn {
+    position: absolute;
+    margin: 8px 0 0 8px;
+    left: 0;
+    top: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.add-note .not-banner .done-note {
+    width: 100%;
+    background: #E9E7DE52 0 0 no-repeat padding-box;
+    border: 1px dashed #1A1A1A49;
+    opacity: 1;
+    box-sizing: border-box;
+    position: relative;
+    margin: 12px 0 0 0;
+    padding: 20px 5px 12px 28px;
+}
+
+.add-note .not-banner .done-note p {
+    text-align: left;
+    font: normal normal 300 14px/18px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0;
+}
+
+.add-note {
+    height: auto;
+}
+
+.add-note .trash-btn {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-color: transparent;
+    padding: 0;
+    max-width: 13px;
+    max-height: 13px;
+    border: none;
+}
+
+.add-note .trash-btn img {
+    max-width: 100%;
+}

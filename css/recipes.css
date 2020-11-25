@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box !important;
+}
+
+.recipes-banner {
+    max-width: 1640px;
+    margin: 34px auto 0;
+}
+
+.recipes-banner .recipes-banner_header {
+    margin-bottom: 12px;
+}
+
+.recipes-banner .recipes-banner_header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipes-banner .recipes-banner_header h2 {
+    text-align: left;
+    font: normal normal bold 26px/37px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 0;
+}
+
+.recipes-banner .recipes-banner_header div > p {
+    text-align: center;
+    font: normal normal 300 22px/20px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A93;
+    margin: 0;
+}
+
+.recipes-banner .recipes-banner_header div > p span {
+    color: #1A1A1A;
+}
+
+.recipes-banner .recipes-banner_header .servings-num-item {
+    text-align: left;
+    font: normal normal 300 22px/27px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A93;
+}
+
+.recipes-banner .recipes-banner_header .servings-num-item .val-bar {
+    color: #1A1A1A;
+}
+
+.recipes-banner .recipes-banner_content {
+    display: flex;
+}
+
+.recipes-banner .recipes-banner_content > div:first-child {
+    background-color: transparent;
+}
+
+.recipes-banner .recipes-banner_content > div {
+    box-sizing: border-box;
+    margin-right: 12px;
+    background-color: #fff;
+}
+
+.recipes-banner .recipes-banner_content > div:last-child {
+    margin-right: 0;
+}
+
+.recipes-banner .recipes-banner_content .recipes-banner_content-header {
+    height: 45px;
+    background: #FDECA8 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    display: flex;align-items: center;
+}
+
+.recipes-banner .recipes-banner_content .recipes-banner_content-header {
+    height: 45px;
+    background: #FDECA8 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding: 8px 12px;
+}
+
+.recipes-banner .recipes-banner_content .recipes-banner_content-header h3 {
+    text-align: left;
+    font: normal normal 600 22px/27px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 8px 2px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar ul li {
+    text-align: left;
+    font: normal normal 300 20px/24px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    padding: 0 10px;
+    letter-spacing: 0;
+    color: #1A1A1A93;
+    border-right: 1px solid #1A1A1A93;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar ul li:last-child {
+    border-right: none;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar ul li span {
+    color: #1A1A1A;
+    font-weight: 700
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar .img-bar {
+    margin-top: 18px;
+    height: 501px;
+    max-width: 553px;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar .img-bar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar {
+    width: 510px;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar ul {
+    padding: 0 32px;
+    margin: 60px 12px 0 0;
+    list-style: none;
+    max-height: 410px;
+    overflow: auto;
+    max-width: 498px;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar li {
+    color: #1A1A1A93;
+    font: normal normal 300 20px/34px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar li:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #000000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar li span {
+    text-align: left;
+    font: normal normal 600 20px/34px Sofia Pro;
+    font-family: SofiaProBold, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #1A1A1A;
+}
+
+.recipes-banner .recipes-banner_content .instructions-bar {
+    width: 553px;
+}
+
+.recipes-banner .recipes-banner_content .instructions-bar ol {
+    padding: 0 32px;
+    margin: 45px 12px 0 20px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.recipes-banner .recipes-banner_content .instructions-bar li {
+    text-align: left;
+    font: normal normal 300 20px/24px Sofia Pro;
+    font-family: SofiaProLight, sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+}
+
+.recipes-banner .recipes-banner_content .instructions-bar li:last-child {
+    margin-bottom: 0;
+}
+
+.recipes-banner .recipes-banner_content .nutrition-bar {
+    max-width: 553px;
+}
+
+.recipes-banner .recipes-banner_content .ingredients-bar {
+    max-width: 510px;
+}
+
+.recipes-banner .recipes-banner_content .instructions-bar {
+    max-width: 553px;
+}
+.recipes-banner .recipes-banner_content > div:first-child .recipes-banner_header {
+    display: none;
+}
+
+.shopping-list .shopping-list-content .title_content {
+    display: none;
+}
+
+.recipes-banner .recipes-banner_content > div:first-child .recipes-banner_header {
+    display: block;
+}
+.recipes-banner .recipes-banner_content > div.title_content{
+    display: none;
+}
+.recipes-banner .recipes-banner_content > div.add-print-time{
+    display: none;
+}
+.recipes-banner .recipes-banner_content .notes-bar{
+    display: none;
+}
+.recipes-banner .recipes-banner_content .nutrition-bar .date-info{
+    display: none;
+}
+.recipes-banner .recipes-banner_content > div .recipes-banner_header{
+    display: none;
+}
+@media (max-width: 1640px) {
+    .recipes-banner {
+        margin: 100px 30px 0;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar,
+    .recipes-banner .recipes-banner_content .ingredients-bar,
+    .recipes-banner .recipes-banner_content .instructions-bar {
+        width: 100%;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar ul {
+        padding: 0 32px;
+        margin: 60px 12px 0 0;
+        list-style: none;
+        max-height: 410px;
+        overflow: auto;
+        width: 341px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .recipes-banner .recipes-banner_content .instructions-bar ol {
+        max-width: 480px;
+    }
+
+    .recipes-banner .recipes-banner_content .instructions-bar ol {
+        padding: 0 15px 0 20px;
+        margin: 40px 10px 0 15px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar ul {
+        padding: 0;
+        margin: 40px 10px 0 15px;
+    }
+
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        line-height: 23px;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar ul li {
+        font-size: 14px;
+        padding: 0 7px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar li,
+    .recipes-banner .recipes-banner_content .ingredients-bar li span,
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        font-size: 18px;
+    }
+
+    .recipes-banner .recipes-banner_header h2 {
+        font-size: 24px;
+    }
+
+    .recipes-banner .recipes-banner_header .servings-num-item,
+    .recipes-banner .recipes-banner_header div > p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .recipes-banner .recipes-banner_content .nutrition-bar ul li {
+        font-size: 14px;
+        padding: 0 7px;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar .img-bar {
+        height: 450px;
+    }
+
+    .recipes-banner .recipes-banner_header h2 {
+        font-size: 21px;
+    }
+
+    .recipes-banner .recipes-banner_header .servings-num-item,
+    .recipes-banner .recipes-banner_header div > p {
+        font-size: 17px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar ul {
+        width: 300px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar li,
+    .recipes-banner .recipes-banner_content .ingredients-bar li span,
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        font-size: 16px;
+    }
+
+    .recipes-banner .recipes-banner_content .recipes-banner_content-header h3 {
+        font-size: 19px;
+    }
+
+    .recipes-banner {
+        margin: 70px 15px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .recipes-banner {
+        margin: 50px 15px;
+    }
+
+    .recipes-banner .recipes-banner_content {
+        flex-wrap: wrap;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar ul,
+    .recipes-banner .recipes-banner_content .instructions-bar ol {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .recipes-banner .recipes-banner_content div {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .recipes-banner .recipes-banner_content > div {
+        margin-right: 0;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar,
+    .recipes-banner .recipes-banner_content .instructions-bar {
+        padding: 0 0 0 15px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar ul,
+    .recipes-banner .recipes-banner_content .instructions-bar ol {
+        margin: 20px 0;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar .img-bar {
+        height: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .recipes-banner .recipes-banner_header h2 {
+        font-size: 19px;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar ul li {
+        font-size: 12px;
+    }
+
+    .recipes-banner .recipes-banner_header .servings-num-item, .recipes-banner .recipes-banner_header div > p {
+        font-size: 14px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar li,
+    .recipes-banner .recipes-banner_content .ingredients-bar li span,
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipes-banner .recipes-banner_header h2,
+    .recipes-banner .recipes-banner_content .recipes-banner_content-header h3 {
+        font-size: 17px;
+    }
+
+    .recipes-banner .recipes-banner_content .nutrition-bar ul li {
+        font-size: 10px;
+    }
+
+    .recipes-banner .recipes-banner_header .servings-num-item, .recipes-banner .recipes-banner_header div > p {
+        font-size: 12px;
+    }
+
+    .recipes-banner .recipes-banner_content .ingredients-bar li,
+    .recipes-banner .recipes-banner_content .ingredients-bar li span,
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        font-size: 12px;
+    }
+
+    .recipes-banner .recipes-banner_content .instructions-bar li {
+        margin-bottom: 10px;
+    }
+
+    .recipes-banner {
+        margin: 30px 15px;
+    }
+}
