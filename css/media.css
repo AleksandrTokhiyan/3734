@@ -5,12 +5,8 @@
 
     .meal-plan-dashboard-body .aside-left {
         width: 1180px;
-        /*margin-right: 15px;*/
     }
 
-    .meal-plan-dashboard-body {
-        /*margin: 0 15px;*/
-    }
 }
 
 @media (max-width: 1640px) {
@@ -19,24 +15,86 @@
     }
 
     .meal-plan-dashboard-body .days-of-week-item-body {
-        overflow-x: auto;
+        /*overflow-x: auto;*/
     }
 
     .meal-plan-dashboard-body .aside-left {
         width: auto;
         max-width: 1150px;
         margin-right: 30px;
+        min-width: initial;
+
     }
 
     .meal-plan-dashboard-body .aside-right {
         min-width: initial;
+        max-width: 390px;
+
     }
 
     .meal-plan-dashboard-body {
         display: flex;
         justify-content: space-between;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item {
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .meal-plan-dashboard-body label[for=searchMainIngredient] {
+        margin: 0 8px 8px 8px;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item:last-child {
+        margin: 0;
+    }
+
+    .meal-plan-dashboard {
+        max-width: 1600px;
+    }
+
+    .meal-plan-dashboard-body .WeekDays {
+        max-height: 915px;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        height: 870px;
+    }
+
+    .add-note .form_group textarea {
+        min-width: initial;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+        padding: 0 0 0 50px;
+        width: 65%;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.favourite-recipes .WeekDays {
+        overflow-y: initial;
+    }
+
+    .meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body .dishes-item-bar {
+        width: 260px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        margin: 0 10px 15px 0;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item {
+        height: 240px;
+    }
+
+    .favourite-recipes .dishes-item-bar .img-bar {
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body {
         margin: 0 15px;
     }
+
 
 }
 
@@ -47,22 +105,80 @@
 
     .dishes-item-bar .img-bar {
         width: 100%;
-        border-color: red;
     }
 
     .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
         width: 25%;
-        box-shadow: 0 0 3px red;
+        max-width: 260px;
 
     }
 
-    .meal-plan-dashboard-body .days-of-week-item {
-        box-shadow: 0 0 3px red;
-    }
 
     .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
         width: 100%;
         max-width: 100%;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-body {
+        justify-content: space-between;
+    }
+
+
+    .meal-plan-dashboard-body .aside-left {
+        max-width: 70%;
+        margin-right: 20px;
+    }
+
+    .meal-plan-dashboard-body .aside-right {
+        max-width: 28%;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .box {
+        max-width: 100%;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar {
+        width: 100%;
+    }
+
+    .custom-recipes-bar .dishes-item-bar {
+        width: 100%;
+    }
+
+    .dishes-item-bar {
+        width: 49%;
+    }
+
+    .meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body .dishes-item-bar {
+        width: 215px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        width: 19%;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item:nth-child(7n) {
+        margin-right: inherit;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        width: 32%;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item:nth-child(3n) {
+        margin: 0;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans > div {
+        justify-content: space-between;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item img {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        object-fit: cover;
     }
 }
 
@@ -87,8 +203,9 @@
     }
 
     .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
-        width: 20%;
-        max-width: 20%;
+        width: 19%;
+        max-width: 19%;
+        max-height: 275px;
     }
 
     div.drop_down {
@@ -122,22 +239,151 @@
         max-width: 100%;
     }
 
+    .meal-plan-dashboard-body .days-of-week-item-body {
+        overflow-x: initial;
+        height: auto;
+    }
+
+    .meal-plan-dashboard-body label[for=searchMainIngredient] {
+        max-width: 100%;
+    }
+
+    .meal-plan-dashboard-body #searchMainIngredient {
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .aside-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dashboard-head {
+        margin: 0 15px;
+    }
+
+    .meal-plan-dashboard-body {
+        margin-top: 15px;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar.add-custom-recipe {
+        height: auto;
+        margin: 0 0 30px 0;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item {
+        width: 32%;
+        height: 200px;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item img {
+        max-width: 100%;
+        height: 200px;
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .aside-left {
+        min-width: auto;
+        max-width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar .dishes-item-bar {
+        margin: 0 0 20px 0;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar {
+        width: 35%;
+        height: auto;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+        width: 65%;
+    }
+
+    .meal-plan-dashboard-body .aside-left > div:last-child {
+        max-height: initial;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar {
+        max-height: initial;
+        height: auto;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        margin: 0;
+    }
+
+    .ingredient-item {
+        padding: 0;
+        height: 580px;
+    }
+
+    .add-note .form_group textarea {
+        max-width: 100%;
+    }
+
+    div.drop_down,
+    .meal-plan-dashboard-body label[for=searchMainIngredient] {
+        margin: 0 0 20px 0;
+        max-width: 100%;
+    }
+
+    .add-note .not-banner {
+        max-height: 300px;
+    }
+
+    .add-note .not-banner {
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .aside-right form {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
     .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
-        width: 25%;
-        max-width: 25%;
+        width: 24%;
+        max-width: 24%;
     }
 
     .meal-plan-dashboard-body .aside-right .dishes-category-bar {
         max-height: 560px;
     }
+
+    .meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body .dishes-item-bar {
+        margin: 0 0 20px 0;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar {
+        width: 40%;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+        width: 60%;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item h2 {
+        font-size: 30px;
+        line-height: initial;
+    }
+
+    .ingredient-item {
+        height: 547px;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
+        margin: 0 0 20px 0;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+        margin: 20px 0 50px 0;
+    }
 }
 
 @media (max-width: 992px) {
     .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button,
-    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li{
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
         font-size: 16px;
         background-color: #6262AB;
         color: #56A646;
@@ -149,6 +395,7 @@
 
     .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
         width: 50%;
+        max-width: 50%;
         box-sizing: border-box;
 
     }
@@ -156,7 +403,6 @@
     .type-eating-time-bar.show-in-media {
         display: block;
         width: 100%;
-        border: 1px solid green;
         margin: 15px 0;
     }
 
@@ -169,20 +415,52 @@
         width: auto;
         padding: 0 10px;
         height: 32px;
-        background-color: red;
     }
 
     .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li {
         width: 50%;
         box-sizing: border-box;
     }
-    .meal-plan-dashboard-body .days-of-week-item-head > div p
-    {
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div p {
         font-size: 14px;
 
     }
-    .meal-plan-dashboard-body .days-of-week-item-head > div p span{
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div p span {
         font-size: 12px;
+    }
+
+    .dishes-item-bar .img-bar {
+        height: 170px;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item h2 {
+        font-size: 27px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar {
+        width: 51%;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+        width: 49%;
+        padding: 0 0 0 20px;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar {
+        height: 155px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .head-name h2,
+    .meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+        font-size: 35px;
+        line-height: initial;
+    }
+
+    .meal-plan-dashboard-body .note-btn i.fa-sticky-note,
+    .meal-plan-dashboard-body .heart-btn i.fa-heart, .meal-plan-dashboard-body .heart-btn i.fa-heart-o {
+        font-size: 21px;
     }
 }
 
@@ -190,6 +468,7 @@
     .meal-plan-dashboard-body .aside-right .dishes-category-bar {
         max-height: 545px;
     }
+
     .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar {
         width: 33.3%;
         max-width: 33.3%;
@@ -205,38 +484,112 @@
         width: 50%;
         max-width: 50%;
     }
-    .type-eating-time-bar.show-in-media{
+
+    .type-eating-time-bar.show-in-media {
         margin: 10px 0;
     }
-    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button{
+
+    .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button {
         font-size: 12px;
     }
+
     .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
-        font-size: 14px;}
+        font-size: 14px;
+    }
+
     .dishes-item-bar .text-bar .dishes-item-bar-name {
         font-size: 12px;
         min-height: initial;
     }
+
     .dishes-item-bar .text-bar .dishes-item-bar-info span {
         width: 25px;
         height: 25px;
         font-size: 10px;
     }
-    .meal-plan-dashboard-body .days-of-week-item-head > div p{
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div p {
         font-size: 12px;
         line-height: initial;
     }
+
     .meal-plan-dashboard-body .days-of-week-item-head > div p span {
         min-width: 50px;
-        line-height: initial;}
-    .meal-plan-dashboard-body .days-of-week-item-head h2{
+        line-height: initial;
+    }
+
+    .meal-plan-dashboard-body .days-of-week-item-head h2 {
         line-height: initial;
         font-size: 25px;
         padding: 3px;
     }
-    div.drop_down > div.caption{
+
+    div.drop_down > div.caption {
         font-size: 14px;
         line-height: initial;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .custom-recipe-item-banner .create-custom-recipes .created-recipes-bar {
+        padding: 0;
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes {
+        flex-direction: column;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item,
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item img {
+        height: 120px;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item h2 {
+        font-size: 16px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .head-name h2,
+    .meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+        font-size: 30px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        width: 49%;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        margin: 0 !important;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item:nth-child(2n) {
+        margin: 0 0 7px 7px !important;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates],
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydratesTwo],
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar p,
+    .add-note .form_group label,
+    .custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar .info-toAdd,
+    .save-btn,
+    .meal-plan-dashboard-body #searchMainIngredient,
+    .add-note .not-banner .add-not-bar span,
+    .add-note .not-banner .done-note p,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .add-ingredients,
+    .ingredient-categories-control-bar .ingredient-category-btn .ingredient-btnName {
+        font-size: 14px;
+        line-height: initial;
+
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item span {
+        font-size: 21px;
     }
 }
 
@@ -244,72 +597,194 @@
     .meal-plan-dashboard-head {
         margin: 0 10px 20px 10px;
     }
-    .meal-plan-dashboard-body{
+
+    .meal-plan-dashboard-body {
         margin: 0 10px;
     }
+
     .meal-plan-dashboard-head .sentence-category-bar button, .meal-plan-dashboard-head .capabilities-bar button {
         font-size: 10px;
         padding: 3px 4px;
     }
-    .dishes-item-bar .text-bar .dishes-item-bar-setting{
+
+    .dishes-item-bar .text-bar .dishes-item-bar-setting {
         margin: 0 0 5px 0;
     }
-    div.drop_down > div.caption{
+
+    div.drop_down > div.caption {
         font-size: 12px;
     }
+
     .meal-plan-dashboard-body .days-of-week-item-head > div p span {
         min-width: 40px;
         font-size: 10px;
         margin: 0 0 0 6px;
     }
+
     .meal-plan-dashboard-body .days-of-week-item-head > div p {
-        font-size: 10px;}
+        font-size: 10px;
+    }
+
     .meal-plan-dashboard-body .days-of-week-item-head > div p:last-child {
         margin-left: 5px;
     }
+
     .meal-plan-dashboard-body .days-of-week-item-head h2 {
-        font-size: 21px;}
+        font-size: 21px;
+    }
+
     .meal-plan-dashboard-body .days-of-week-item-head {
         flex-flow: column;
     }
-    .meal-plan-dashboard-body .days-of-week-item-head h2{
+
+    .meal-plan-dashboard-body .days-of-week-item-head h2 {
         max-width: max-content;
-        margin: 0 0 5px 0 ;
+        margin: 0 0 5px 0;
     }
-    .meal-plan-dashboard-body .days-of-week-item-head > div{
+
+    .meal-plan-dashboard-body .days-of-week-item-head > div {
         padding: 0;
     }
+
     .meal-plan-dashboard-body .aside-left .type-eating-time-bar ul li {
         font-size: 12px;
     }
-    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .text-bar .dishes-item-bar-name{
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .text-bar .dishes-item-bar-name {
         width: 100%;
         min-height: initial;
         font-size: 12px;
         line-height: initial;
         margin: 0 0 5px 0;
     }
+
     .dishes-item-bar .text-bar > div {
-        flex-wrap: wrap;}
+        flex-wrap: wrap;
+    }
+
     .meal-plan-dashboard-body .aside-right .dishes-category-bar .dishes-item-bar .img-bar {
         max-height: 150px;
     }
+
     .meal-plan-dashboard-body .aside-right .dishes-category-bar {
         max-height: 480px;
         margin: 0 0 20px;
     }
+
     .dishes-item-bar .text-bar .dishes-item-bar-info span {
         width: 20px;
         height: 20px;
         font-size: 8px;
     }
-    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li{
+
+    .meal-plan-dashboard-body .aside-left .type-eating-time-bar.show-in-media ul li {
         padding: initial;
     }
+
     .dishes-item-bar .img-bar {
         max-height: 150px;
     }
-    .dishes-item-bar .text-bar .dishes-item-bar-name{
+
+    .dishes-item-bar .text-bar .dishes-item-bar-name {
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .aside-right .dishes-category-bar.add-custom-recipe {
+        flex-direction: column;
+        max-height:inherit;
+
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item {
+        width: 100%;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item {
+        margin: 0 0 20px 0;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item:last-child {
+        margin: 0;
+    }
+
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item,
+    .meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item img {
+        height: 250px;
+    }
+
+    .meal-plan-dashboard-body .note-btn i.fa-sticky-note,
+    .meal-plan-dashboard-body .heart-btn i.fa-heart, .meal-plan-dashboard-body .heart-btn i.fa-heart-o {
+        font-size: 17px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .head-name h2, .meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+        font-size: 25px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner h2 {
+        margin: 20px 0 30px 0;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item {
+        width: 100%;
+        margin: 0 0 15px 0 !important;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item:nth-child(2n) {
+        margin: 0 0 15px 0 !important;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner.saved-meal-plans .meal-plan-item span {
+        font-size: 17px;
+    }
+
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates],
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydratesTwo],
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar p,
+    .add-note .form_group label,
+    .custom-recipe-item-banner .create-custom-recipes .dishes-item-bar .img-bar .info-toAdd,
+    .save-btn,
+    .meal-plan-dashboard-body #searchMainIngredient,
+    .add-note .not-banner .add-not-bar span,
+    .add-note .not-banner .done-note p,
+    .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .add-ingredients,
+    .ingredient-categories-control-bar .ingredient-category-btn .ingredient-btnName {
+        font-size: 12px;
+
+    }
+
+    .rate-bar-plain > img {
+        max-width: 10px;
+    }
+
+    .add-note .not-banner .done-note {
+        margin: 8px 0 0 0;
+    }
+
+    .meal-plan-dashboard-body label[for=searchMainIngredient] span {
+        width: 15px;
+        height: 15px;
+    }
+
+    .meal-plan-dashboard-body label[for=searchMainIngredient] span i {
+        font-size: 14px;
+    }
+
+    .add-note .trash-btn {
+        max-width: 10px;
+        max-height: 10px;
+    }
+
+    .save-btn {
+        width: auto;
+        padding: 5px 30px
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+    .meal-plan-dashboard-body label[for=searchMainIngredient] {
         width: 100%;
     }
 }

@@ -234,7 +234,29 @@
     display: none;
 }
 .recipes-banner .recipes-banner_content .notes-bar{
-    display: none;
+margin: 25px 20px 10px ;
+    max-width: 430px;
+    width: auto !important;
+}
+.recipes-banner .recipes-banner_content .notes-bar h3{
+    text-align: left;
+    font: normal normal 600 22px/27px Sofia Pro;
+    font-family: SofiaProBold,sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0  0 8px 0;
+}
+.recipes-banner .recipes-banner_content .notes-bar p{
+    text-align: left;
+    font: normal normal 300 20px/24px Sofia Pro;
+    font-family: SofiaProLight,sans-serif;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    margin: 0;
+    max-width: 100%;
 }
 .recipes-banner .recipes-banner_content .nutrition-bar .date-info{
     display: none;
@@ -245,6 +267,9 @@
 @media (max-width: 1640px) {
     .recipes-banner {
         margin: 100px 30px 0;
+    }
+    .recipes-banner .dashboard-head{
+        margin: 0;
     }
 
     .recipes-banner .recipes-banner_content .nutrition-bar,
@@ -301,6 +326,12 @@
     .recipes-banner .recipes-banner_header div > p {
         font-size: 19px;
     }
+    .recipes-banner .recipes-banner_content .notes-bar h3{
+        font-size: 19px;
+    }
+    .recipes-banner .recipes-banner_content .notes-bar p{
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -339,6 +370,7 @@
     .recipes-banner {
         margin: 70px 15px 0;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -378,6 +410,12 @@
     .recipes-banner .recipes-banner_content .nutrition-bar .img-bar {
         height: auto;
     }
+    .recipes-banner .recipes-banner_content .notes-bar h3{
+        font-size: 17px;
+    }
+    .recipes-banner .recipes-banner_content .notes-bar p{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -398,9 +436,19 @@
     .recipes-banner .recipes-banner_content .instructions-bar li {
         font-size: 14px;
     }
+    .recipes-banner .recipes-banner_content .notes-bar h3{
+        font-size: 14px;
+        line-height: initial;
+    }
+    .recipes-banner .recipes-banner_content .notes-bar p{
+        font-size: 12px;
+        line-height: initial;
+    }
 }
 
 @media (max-width: 480px) {
+    .recipes-banner .recipes-banner_content .instructions-bar ol {
+        padding: 0 15px 0 15px;}
     .recipes-banner .recipes-banner_header h2,
     .recipes-banner .recipes-banner_content .recipes-banner_content-header h3 {
         font-size: 17px;

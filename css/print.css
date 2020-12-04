@@ -368,7 +368,6 @@
 
     section .recipes-banner .recipes-banner_content > div .notes-bar {
         margin: 16px 0 0 0 !important;
-        display: block !important;
     }
 
     section .recipes-banner .recipes-banner_content > div .notes-bar h3 {

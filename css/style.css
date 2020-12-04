@@ -40,10 +40,11 @@ html::-webkit-scrollbar-thumb {
     border: 1px solid #E9E7DE;
 }
 
-button, input[type=submit]{
-cursor: pointer;
+button, input[type=submit] {
+    cursor: pointer;
 }
-button, input, textarea{
+
+button, input, textarea {
     outline: none;
 }
 
@@ -179,6 +180,7 @@ button, input, textarea{
     padding: 25px 12px 0 20px;
     background-color: #fff;
 }
+
 .meal-plan-dashboard-body .days-of-week-item:first-child {
     padding-top: 0;
 }
@@ -249,15 +251,17 @@ button, input, textarea{
 
 .meal-plan-dashboard-body .days-of-week-item-body {
     display: flex;
-height: 261px}
+    height: 261px
+}
 
 .meal-plan-dashboard-body .days-of-week-item-body .dishes-item-bar {
     height: auto;
     width: 276px;
     margin: 3px 0 0 0;
-    padding:7px 5px;
+    padding: 7px 5px;
 
 }
+
 .meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body .dishes-item-bar {
     margin: 0 0 40px 0;
 }
@@ -368,7 +372,7 @@ height: 261px}
     justify-content: space-between;
     flex-wrap: wrap;
     max-height: 929px;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 0 8px 20px 8px;
     box-sizing: border-box
 }
@@ -398,7 +402,7 @@ height: 261px}
 .meal-plan-dashboard-body .aside-left > div:last-child,
 .meal-plan-dashboard-body .aside-right .dishes-category-bar {
     margin-right: 9px;
-    overflow-x: hidden !important;
+    /*overflow-x: hidden !important;*/
 }
 
 .meal-plan-dashboard-body .aside-left > div:last-child {
@@ -406,7 +410,8 @@ height: 261px}
     padding: 0 0 20px 0;
     overflow: hidden;
 }
-.meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .WeekDays{
+
+.meal-plan-dashboard-body .aside-left.daily-meal-schedule-hide .WeekDays {
     overflow: auto;
     max-height: 851px;
 }
@@ -416,6 +421,7 @@ height: 261px}
 }
 
 div.drop_down {
+    max-width: 390px;
     position: relative;
     margin: 0 8px 10px 8px;
 }
@@ -476,7 +482,7 @@ div.drop_down > div.list > div.dishes-item {
 
     font: normal normal 300 16px/19px Sofia Pro;
     font-family: SofiaproLight, sans-serif;
-transition: .3s ease;
+    transition: .3s ease;
     letter-spacing: 0;
     color: #1A1A1A;
     opacity: 1;
@@ -495,7 +501,8 @@ div.drop_down > div.caption:hover {
 }
 
 div.drop_down > div.list > div.dishes-item:hover {
-background-color: #FDD106}
+    background-color: #FDD106
+}
 
 div.drop_down.open > div.caption {
     margin-bottom: 10px;
@@ -538,6 +545,7 @@ div.drop_down.open > div.list {
     padding: 0 8px 20px 0;
     box-sizing: border-box;
 }
+
 .ingredient-categories-control-bar {
     display: flex;
     margin: 0 0 13px 0;
@@ -668,6 +676,7 @@ button {
 
 .meal-plan-dashboard-body .aside-right form {
     text-align: center;
+    max-width: 390px;
 }
 
 .meal-plan-dashboard-body label[for=searchMainIngredient] {
@@ -739,7 +748,9 @@ button {
     justify-content: center;
     cursor: pointer;
 }
-
+.meal-plan-dashboard-body .add-custom-recipe .custom-recipe-item img{
+    max-width: 100%;
+}
 .meal-plan-dashboard-body .recipe-item-non-active {
     opacity: 0.3 !important;
 }
@@ -835,7 +846,7 @@ button {
 .meal-plan-dashboard-body .custom-recipe-item-banner.favourite-recipes .WeekDays {
     display: block !important;
     /*max-height: initial;*/
-padding: 0 8px 0 24px;
+    padding: 0 8px 0 24px;
 }
 
 .meal-plan-dashboard-body .custom-recipe-item-banner.favourite-recipes h2 {
@@ -848,9 +859,10 @@ padding: 0 8px 0 24px;
 }
 
 
-.meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body{
+.meal-plan-dashboard-body .favourite-recipes .days-of-week-item-body {
     height: auto;
 }
+
 .meal-plan-dashboard-body .title_content {
     display: none;
 }
@@ -950,7 +962,7 @@ padding: 0 8px 0 24px;
     margin: 0 0 12px 0;
 }
 
- .save-btn {
+.save-btn {
     width: 120px;
     background: #56A646 0 0 no-repeat padding-box;
     opacity: 1;
@@ -969,7 +981,7 @@ padding: 0 8px 0 24px;
     outline: none;
 }
 
-.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes  .add-ingredients{
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .add-ingredients {
     text-align: left;
     text-decoration: underline;
     font: normal normal 300 14px/16px Sofia Pro;
@@ -1041,6 +1053,7 @@ padding: 0 8px 0 24px;
     border-color: #1A1A1A49;
     text-transform: capitalize;
 }
+
 .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar input:focus {
     border-color: #56A646;
 }
@@ -1050,10 +1063,11 @@ padding: 0 8px 0 24px;
     font-size: 14px;
     line-height: 17px;
 }
-.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] span
-{
+
+.meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] span {
     font-family: SofiaProLight, sans-serif;
-    text-transform: lowercase;        }
+    text-transform: lowercase;
+}
 
 .meal-plan-dashboard-body .custom-recipe-item-banner .create-custom-recipes .custom-recipes-bar label[for=recipeCarbohydrates] input:focus {
     border: 2px solid #56A646;
@@ -1115,6 +1129,12 @@ padding: 0 8px 0 24px;
     padding: 15px;
 }
 
+.add-note .not-banner {
+overflow-y:auto ;
+    max-height:665px ;
+    padding: 0 3px 0 0;
+}
+
 .add-note .not-banner .add-not-bar {
     width: 100%;
     height: 72px;
@@ -1124,7 +1144,6 @@ padding: 0 8px 0 24px;
     box-sizing: border-box;
     position: relative;
 }
-
 .add-note .add-not-bar > div {
     height: 100%;
     display: flex;
@@ -1199,4 +1218,59 @@ padding: 0 8px 0 24px;
 
 .add-note .trash-btn img {
     max-width: 100%;
+}
+.meal-plan-dashboard-body .aside-right .add-note.dishes-category-bar {
+    align-content: flex-start;
+}
+
+.ingredient-item {
+    max-height: 760px;
+}
+
+/* @medias */
+
+
+@media (max-width: 1600px) {
+    .dashboard-head {
+        margin: 0 30px 30px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-head {
+        margin: 0 15px;
+    }
+
+    .dashboard-head .capabilities-bar button, .dashboard-head .sentence-category-bar a, .dashboard-head .capabilities-bar a {
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .dashboard-head .capabilities-bar button, .dashboard-head .sentence-category-bar a, .dashboard-head .capabilities-bar a {
+        padding: 7px 9px;
+        font-size: 12px;
+        margin: 0 5px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-head {
+        flex-direction: column;
+    }
+
+    .dashboard-head .sentence-category-bar {
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+
+    .dashboard-head .capabilities-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dashboard-head {
+        border-bottom: none;
+    }
 }
